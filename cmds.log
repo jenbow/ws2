@@ -1,0 +1,20 @@
+  122  ls
+  123  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+  124  ls ..
+  125  head amazon_reviews_us_Books_v1_02.tsv 
+  126  ls -lt
+  127  head amazon_reviews_us_Books_v1_02.tsv | cut -f 12
+  128  cut -f 12 amazon_reviews_us_Books_v1_02.tsv | grep Y | wc -l
+  129  cut -f 12 amazon_reviews_us_Books_v1_02.tsv | grep Y | wc -l > counts.txt
+  130  cut -f 12 amazon_reviews_us_Books_v1_02.tsv | grep N | wc -l >> counts.txt
+  131  nano counts.txt 
+  132  cat counts.txt 
+  133  mkdir ws2
+  134  mv counts.txt ws2/
+  135  cd ws2/
+  136  ls
+  137  git init
+  138  history | tail -n 13 > cmds.log
+  139  ls
+  140  cat cmds.log 
+  141  history | tail -n 20 > cmds.log
